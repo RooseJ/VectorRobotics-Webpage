@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('Pictures/Media.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Interview) */
+.bgimg-2 {
+  background-image: url("Pictures/Chloe.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Manufacturing Process) */
+.bgimg-3 {
+  background-image: url("Pictures/Design.jpeg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Vector Robotics Homepage.htm" class="w3-bar-item w3-button">HOME</a>
+    <a href="Vector Robotics About Us.htm" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="Vector Robotics Products and Services.htm" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cart-plus"></i> PRODUCTS</a>
+    <a href="Vector Robotics Media Page.htm" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MEDIA</a>
+    <a href="Vector Robotics Contact Us.htm" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    </a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"> </span> MEDIA</span>
+  </div>
+</div>
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">HERE ARE SOME PICTURES</h3>
+    </div>
+
+    <!-- Container (Media Slideshow) -->
+    <div class="w3-content" style="max-width:1200px">
+      <img class="mySlides" src="Pictures/Media 4.jpg" style="width:100%;display:none">
+      <img class="mySlides" src="Pictures/Media 1.jpeg" style="width:100%">
+      <img class="mySlides" src="Pictures/Media 2.jpeg" style="width:100%;display:none">
+      <img class="mySlides" src="Pictures/Media 3.jpeg" style="width:100%;display:none">
+      <img class="mySlides" src="Pictures/Store.jpg" style="width:100%;display:none">
+      <img class="mySlides" src="Pictures/Media 5.jpg" style="width:100%;display:none">
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src='Pictures/Media 4.jpg' style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+        </div>
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="Pictures/Media 1.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+        </div>
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="Pictures/Media 2.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+        </div>
+      </div>
+
+      <div class="w3-row-padding w3-section">
+        <div class="w3-col s4">
+          <img class="demo w3-opacity w3-hover-opacity-off" src="Pictures/Media 3.jpeg" style="width:100%;cursor:pointer" onclick="currentDiv(4)">
+      </div>
+      <div class="w3-col s4">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="Pictures/Store.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(5)">
+      </div>
+      <div class="w3-col s4">
+        <img class="demo w3-opacity w3-hover-opacity-off" src="Pictures/Media 5.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(6)">
+      </div>
+    </div>
+
+    <script>
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+      }
+      x[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " w3-opacity-off";
+    }
+    </script>
+
+
+<!-- Parallax image for Chloe Interview process -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">AN INTERVIEW WITH OUR FIRST ANDROID</span>
+  </div>
+</div>
+<!-- Container (Video Code) -->
+<div class="w3-content w3-container w3-padding-64" >
+<video width=100% controls>
+  <source src="Pictures/Chloe Interview trim.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div>
+
+
+<!-- Parallax image for manafacturing process -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">OUR MANUFACTURING PROCESS</span>
+    </div>
+  </div>
+<!-- Container (Video Code) -->
+<div class="w3-content w3-container w3-padding-64" >
+<video width=100% controls>
+    <source src="Pictures/Kamski Interview trim.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Please <a href="Vector Robotics Contact Us.htm" title="Contact us page"  class="w3-hover-text-green">contact us</a> for more information.</p>
+
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+</script>
+
+</body>
+</html>

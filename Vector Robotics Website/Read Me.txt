@@ -1,0 +1,4 @@
+Student Name: Ahuose Eki
+Student I.D: P22197772
+
+To run website please extract the zip folder then double-click the "Vector Robotics Homepage" in files and it should open in your browser :)

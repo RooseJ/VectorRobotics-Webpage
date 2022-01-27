@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('Pictures/AboutUs.jpeg');
+  min-height: 100%;
+}
+
+/* Second image (About our Androids) */
+.bgimg-2 {
+  background-image: url("Pictures/Our androids.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="Vector Robotics Homepage.htm" class="w3-bar-item w3-button">HOME</a>
+    <a href="Vector Robotics About Us.htm" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="Vector Robotics Products and Services.htm" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cart-plus"></i> PRODUCTS</a>
+    <a href="Vector Robotics Media Page.htm" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MEDIA</a>
+    <a href="Vector Robotics Contact Us.htm" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    </a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" >
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">ABOUT</span> US</span>
+  </div>
+</div>
+
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" >
+      <h3 class="w3-center">Vector Robotic's mission is to give the world a direction.</h3>
+      <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <p class="w3-justify">Vector Robotics was founded in 2003 by a group of engineers who wanted to accelerate the advancement of technology.
+          These group of engineers decided to research and design something the world had never seen – it's first humanoid android. Today, Vector Robotics plans to use its invention to create a better future for the next generations. </p>
+        <p class="w3-justify">Vector Robotics androids are produced at its factory in Detroit, Michigan, and Gigafactory in Shanghai, China. To achieve our goal of having the safest factories in the world, Vector Robotics is taking a proactive approach to safety, requiring production employees to participate in a multi-day training program before ever setting foot on the factory floor. From there, Vector Robotics continues to provide on-the-job training and track performance daily so that improvements can be made quickly. The result is that Vector Robotics safety rate continues to improve while production ramps. </p>
+      </section>
+      <div class="w3-row">
+        <div class="w3-container" style="padding:128px 16px">
+          <h3 class="w3-center">KEY COMPANY FEATURES</h3>
+          <div class="w3-row-padding w3-center" style="margin-top:64px">
+            <div class="w3-quarter">
+              <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+              <p class="w3-large">Responsive</p>
+              <p>We make sure to keep a close as possible relationship with our customers</p>
+            </div>
+            <div class="w3-quarter">
+              <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+              <p class="w3-large">Passion</p>
+              <p>We love what we do here at Vector Robotics. Thats what keeps us motivated to continue to design new and innovative products.</p>
+            </div>
+            <div class="w3-quarter">
+              <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+              <p class="w3-large">Design</p>
+              <p>Our Androids are manufactured using state-of-the-art equipment and are guaranted to never fail.</p>
+            </div>
+            <div class="w3-quarter">
+              <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+              <p class="w3-large">Support</p>
+              <p>We love our customers and give them support through their journey of purchasing an android.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Parallax image for About our androids -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">ABOUT OUR ANDROIDS</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" >
+  <section class="w3-container w3-center w3-content" style="max-width:600px">
+    <p class="w3-justify">Vector Robotics androids are machines that closely mimic humans in appearance and structure. Internally they feature biocomponents, synthetic organs that roughly mirror the organ systems of humans, and Thirium 310 or "blue blood" that circulates energy and electronic information throughout the android body. Thirium 310 is impossible to see with the naked eye once evaporated.</p>
+    <p class="w3-justify">In their basic form, androids appear as bare, plastic-white human bodies, with a few sections colored in gray or blue. The human-like outer skin is made up of a synthetic fluid that covers the body; the androids' hair is similarly generated. The outer skin and hair can be activated and deactivated partially or fully, switching between the human and plastic-white appearance. This retraction or deactivation is controllable by the android, but also happens in case of damage, due to the fluid automatically retracting or due to the damage itself. On their right temple, they bear a circular LED that visibly identifies them as androids and lights up in blue, yellow, or red, depending to their mental processing condition. </p>
+    <p class="w3-justify">Android brains are highly advanced, giving them the processing power to work like and interact with humans on an equal level or above. For example, the PA600 Chloe's brain is capable of performing "several billion billion operations per second", or exaflops, with the newest models able to perform several exaflops. Recent new police androids like the RK800 (Connor) have prodigious mental processing and perception capabilities, notably allowing them to analyze a crime scene and virtually reconstruct it in their minds based on analysis of gathered evidence. Due to his advanced ocular scanning system, the RK800 can see Thirium 310 blood and tell exact model and serial number of any android. Other androids have different capabilities but the majority of them are capable to recognize individuals and objects with speed not much slower than human reaction time.</p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Please <a href="Vector Robotics Contact Us.htm" title="Contact us page"  class="w3-hover-text-green">contact us</a> for more information.</p>
+</footer>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+</script>
+
+</body>
+</html>
